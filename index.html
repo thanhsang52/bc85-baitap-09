@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS buổi 09</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+</head>
+<body>
+    <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">Tính lương nhân viên</h2>
+        <form action="" method="POST">
+            <p>Lương 1 ngày: <span id="salaryPerDay">0</span></p>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số ngày làm"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="workdays">
+            </div>
+            <p id="salary"></p>
+                <button id="btnCalculateSalary" class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark">
+                    Tính lương</button>
+            
+        </form>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">Tính giá trị trung bình</h2>
+        <form action="" method="POST">
+            
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số thứ 1"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="num1">
+            </div>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số thứ 2"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="num2">
+            </div>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số thứ 3"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="num3">
+            </div>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số thứ 4"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="num4">
+            </div>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số thứ 5"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="num5">
+            </div>
+            <button id="btnCalculateAverage"
+                class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark">
+                Tính Giá Trị Trung Bình</button>
+            <p id="result"></p>
+        </form>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">Quy đổi tiền</h2>
+        <form action="" method="POST">
+            <p>Tỉ giá USD/VND: <span id="currencyRate">0</span></p>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số tiền USD"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="usdAmount">
+            </div>
+            
+            <button id="btnCalculateVndAmount"
+                class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark">
+                Quy đổi</button>
+            <p id="vndAmount"></p>
+    
+        </form>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">Tính diện tích, chu vi hình chữ nhật
+        </h2>
+        <form action="" method="POST">
+    
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Chiều dài"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="width">
+            </div>
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Chiều rộng"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="length">
+            </div>
+            
+            <button id="btnCalRect"
+                class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark">
+                Tính</button>
+            <p id="resultRect"></p>
+        </form>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">Tính tổng 2 ký số</h2>
+        <form action="" method="POST">
+         
+            <div class="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
+                <input placeholder="Số có 2 ký số"
+                    class="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none border-gray-200 lg:w-1/2"
+                    type="text" id="number">
+            </div>
+    
+            <button id="btnSumDegit"
+                class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark">
+                Quy đổi</button>
+            <p id="resultOfSumDegit"></p>
+    
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
